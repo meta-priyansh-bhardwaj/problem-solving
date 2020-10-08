@@ -1,0 +1,10 @@
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        int c;
+        vector<int>::iterator it;
+       it= unique(nums.begin(), nums.end());
+        c=it-nums.begin();
+        return c;
+    }
+};
